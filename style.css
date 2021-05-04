@@ -1,0 +1,217 @@
+html {
+  scroll-behavior: smooth;
+  transition: .9s;
+}
+
+.z-index {
+  z-index: 1;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+.btn:hover {
+  background: #c24c15;
+  box-shadow: 0px 0px 3px #006eff;
+}
+
+.hover {
+  overflow: hidden;
+  position: relative;
+  transition: .9s;
+}
+
+.hover img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px blue;
+}
+
+.hover::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.281);
+  transition: .9s;
+}
+
+.hover:hover::before {
+  width: 100%;
+}
+
+.hover:hover .icone {
+  visibility: visible;
+  opacity: 1;
+  top: 200px;
+  transform: rotate(-360deg);
+}
+
+.hover .icone {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: .9s;
+  font-size: 25px;
+}
+
+.hover .icone a {
+  color: white;
+}
+
+.full-website .container-fluid {
+  z-index: 999;
+}
+
+.full-website .container-fluid .row .col-md-5 {
+  margin-top: 8px;
+}
+
+.full-website .container-fluid .row .col-md-5 h2 {
+  background-image: linear-gradient(to right, #2600ff 5%, #b60c0c 5%, blue, #b4a17f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.full-website .container-fluid .row .col-md-7 ul {
+  margin-right: 10px;
+}
+
+.full-website .container-fluid .row .col-md-7 ul li {
+  padding: 12px;
+  display: inline-block;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.full-website .container-fluid .row .col-md-7 ul li:hover a::before {
+  width: 100%;
+  transform: translate(2px);
+}
+
+.full-website .container-fluid .row .col-md-7 ul li:hover a {
+  color: red;
+}
+
+.full-website .container-fluid .row .col-md-7 ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  position: relative;
+  transition: .5s;
+  font-weight: 600;
+}
+
+.full-website .container-fluid .row .col-md-7 ul li a::before {
+  content: "";
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  background: #000;
+  transition: .5s;
+  color: red;
+  border-radius: 50px;
+}
+
+.full-website .bgg {
+  background-image: linear-gradient(to right, #e0e3e7, #e2e2e2);
+}
+
+.full-website .banner {
+  background-image: linear-gradient(to left, #23e9c7, #368abe);
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 50px 0px;
+}
+
+.full-website .banner .container .row {
+  margin: 70px 18px;
+}
+
+.full-website .banner .container .row h1 {
+  font-size: 50px;
+}
+
+.full-website .banner .container .row h1.balance {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.full-website .banner .container .row p {
+  font-size: 18px;
+}
+
+.full-website .banner .container .row .btn {
+  padding: 12px 20px;
+  border: 3px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+.full-website .banner .container .row .btn:hover {
+  background: transparent;
+  box-shadow: 0px 0px 10px #006eff;
+}
+
+.full-website .classes .container .row .col-md-4 .card {
+  background-image: linear-gradient(to right, rgba(219, 219, 145, 0.376), rgba(0, 0, 255, 0.596) 100%, green);
+  color: white;
+  transition: .5s;
+  box-shadow: 0px 0px 18px rgba(0, 0, 255, 0.685);
+}
+
+.full-website .classes .container .row .col-md-4 .card:hover {
+  transform: translateY(10px);
+  box-shadow: 0px 0px 18px chartreuse;
+}
+
+.full-website .classes .container .row .col-md-4 .card:hover a {
+  transform: scale(1.25);
+}
+
+.full-website .classes .container .row .col-md-4 .card a {
+  transition: .5s;
+}
+
+.full-website .classes .container .row .col-md-4 .card a i {
+  color: whitesmoke;
+  font-size: 25px;
+  box-shadow: 0px 0px 10px yellow;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  background: #2e72f0;
+}
+
+.full-website .classes .container .row .col-md-4 .card h4 {
+  margin: 20px 0px;
+}
+
+.full-website .why {
+  background: #020024;
+  background: linear-gradient(40deg, #020024 0%, #89bf8a 0%, rgba(173, 172, 173, 0.927382) 0%, #a48fa7 7%, #ab84b4 14%, #a97cb8 20%, #527a55 28%, #318735 35%, #84df89 49%, #59e861 59%, #77d97c 70%, #53ac58 75%, #64c269 80%, white 92%, #86ae88 100%);
+  padding: 100px 0px;
+}
+/*# sourceMappingURL=style.css.map */
